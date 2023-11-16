@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/index-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <button id="msgButton" class="active">Welcome!</button>
+                <button id="loginButton">Login</button>
+                <button id="registerButton">Register</button>
+            </div>
+            <div class="card-body" id="msgModal">
+                <center><p>Welcome to the Login & Registration Interface.</p></center>
+            </div>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <div class="center-container">
+        <div class="card-body" id="loginModal">
+            <h2>Login</h2>
+            <p>This is the Login Interface. To get started, please enter your username and password below:</p>
+            <form id="loginForm" action="../process/login.php">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <i class="fa fa-user"></i>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <i class="fa fa-lock"></i>
+                <button type="submit" name="login">Login</button>
+            </form>
+        </div>
+    </div>
+    
+            <div class="card-body" id="registerModal">
+                <p>Please enter the required information:</p>
+                <form id="registrationForm" method="POST" action="../process/pending_registrations.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="course">Course & Year Level:</label>
+                    <input type="text" id="course" name="course" required>
+                    <label for='id_number'>UserID:</label>
+                    <input type='text' id='id_number' name='id_number'>
+                    <label for="newUsername">Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    <button type="submit" name="register">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/indexscript.js"></script>
+</body>
+</html>
